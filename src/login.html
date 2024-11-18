@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Login</title>
+    <link rel="stylesheet" href="./styles/logins.css" />
+    <link rel="shortcut icon" href="assets/FavIcon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/FavIcon.png" type="image/x-icon" />
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="./index.html">
+          <img
+            src="./assets/FavIcon.png"
+            width="30"
+            height="30"
+            class="d-inline-block align-top"
+            alt=""
+          />
+          Clone do Youtube
+        </a>
+        <form class="form-inline">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Pesquisar"
+            aria-label="Pesquisar"
+          />
+          <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">
+            Pesquisar
+          </button>
+        </form>
+        <img
+          src="./assets/icone de login.jpeg"
+          width="50"
+          height="auto"
+          alt="..."
+          class="rounded-circle"
+        />
+      </nav>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Nome de Usuário:</label>
+                <input type="text" id="username" name="username" placeholder="Digite seu nome de usuário" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+            </div>
+            <button type="submit" class="btn">Entrar</button>
+            <p id="error-message" class="error-message"></p>
+        </form>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
